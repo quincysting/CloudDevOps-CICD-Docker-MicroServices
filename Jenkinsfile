@@ -28,7 +28,7 @@ pipeline {
 			steps {
 				withAWS(region:'us-west-2', credentials:'Mypass') {
 					sh '''
-						aws eks --region us-west-2 update-kubeconfig --name proj5cluster
+						aws eks --region us-west-2 update-kubeconfig --name proj5-cluster
 					'''
 				}
 			}
