@@ -8,7 +8,7 @@ pipeline {
 					sh '''
 						eksctl create cluster \
 						--name proj5cluster \
-						--version 1.13 \
+						--version 1.15 \
 						--nodegroup-name proj5-nodes \
 						--node-type t2.small \
 						--nodes 2 \
