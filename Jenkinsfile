@@ -33,7 +33,7 @@ pipeline {
 			steps {
 				withAWS(region:'us-west-2', credentials:'Mypass') {
 					sh '''
-						kubectl config use-context arn:aws:eks:us-east-1:142977788479:cluster/capstonecluster
+						kubectl config use-context arn:aws:eks:us-west-2:570781860922:cluster/proj5cluster
 					'''
 				}
 			}
@@ -59,7 +59,7 @@ pipeline {
 			}
 		}
 
-		stage('Create the service in the cluster, redirect to blue') {
+		stage('Create service in the cluster, redirect to blue') {
 			steps {
 				withAWS(region:'us-west-2', credentials:'Mypass') {
 					sh '''
@@ -75,7 +75,7 @@ pipeline {
             }
         }
 
-		stage('Create the service in the cluster, redirect to green') {
+		stage('Create service in the cluster, redirect to green') {
 			steps {
 				withAWS(region:'us-west-2', credentials:'Mypass') {
 					sh '''
