@@ -1,6 +1,6 @@
 # Cloud DevOps Project5
 
-## Project5 workflow
+## Project5 workflow:
 
 ![img-1](Images/Workflow.jpg)
 
