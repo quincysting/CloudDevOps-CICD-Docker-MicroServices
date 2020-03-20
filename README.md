@@ -6,12 +6,12 @@
 
 ## Project5 environmet setup:
 
-> PuTTY into instance ec2-54-188-126-103.us-west-2.compute.amazonaws.com and install
+> PuTTY into instance ec2-54-188-126-103.us-west-2.compute.amazonaws.com and install:
 
-* Jenkins with Blue Ocean Plugin in Jenkins and Pipeline-AWS Plugin
-* Docker (pre-insatlled)
+* Jenkins with Blue Ocean and Pipeline-AWS
+* Docker (pre-installed already)
 * Pip
-* AWS Cli
+* AWSCli
 * Eksctl 0.15.0
 * Kubectl
 
@@ -24,10 +24,10 @@ Branch master :
 * /Images : Screenshots of project5 
 * Jenkinsfile : pipeline for deploying container
 * Dockerfile : Dockerfile for building the image 
-* green-controller.json : Create a replication controller green pod
-* green-service.json : Create the green service
 * blue-controller.json : Create a replication controller blue pod
 * blue-service.json : Create the blue service
+* green-controller.json : Create a replication controller green pod
+* green-service.json : Create the green service
 * index.html : HTML file
 ```
 
@@ -37,7 +37,7 @@ Branch master :
 
 ![img-2](Images/Instance.JPG)
 
-> Setup Jenkins
+> Setup Jenkins environment
 
 ![img-3](Images/Jenkins.JPG)
 
