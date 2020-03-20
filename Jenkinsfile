@@ -34,7 +34,7 @@ pipeline {
 				withAWS(region:'us-west-2', credentials:'Mypass') {
 					sh '''
 						kubectl config use-context arn:aws:eks:us-west-2:570781860922:cluster/proj5cluster
-						kubectl get svc
+						kubectl get services
 					'''
 				}
 			}
